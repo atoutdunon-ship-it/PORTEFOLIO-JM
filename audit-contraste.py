@@ -20,7 +20,7 @@ def contraste(a, b):
     return (max(la, lb) + .05) / (min(la, lb) + .05)
 
 T, A = 7.0, 4.5  # titres / menus / accents  —  texte courant
-CATS = ("mag", "cya", "blu", "vio")
+CATS = ("mag", "cya", "blu", "vio", "ver")
 PAIRES = {
     "index.html": [
         ("Hero — titre", "on-dark", "black", T), ("Hero — accent du titre", "accent-on-dark", "black", T),
@@ -42,6 +42,7 @@ PAIRES = {
         ("Pied — titre", "on-dark", "navy-900", T), ("Pied — intertitre", "accent-on-dark", "navy-900", T),
         ("Pied — texte", "on-dark-2", "navy-900", A), ("Pied — mentions", "on-dark-3", "navy-900", A),
         ("Bandeau aperçu", "mag-l", "mag-t", A),
+        ("Vidéo — bouton de lecture", "ink", "white", T),
     ] + [(f"Domaine {c} — carte et pastille", "ink", f"{c}-f", T) for c in CATS]
       + [(f"Domaine {c} — libellé de carte", f"{c}-l", "white", T) for c in CATS]
       + [(f"Domaine {c} — numéro d'étape", f"{c}-l", "cream", T) for c in CATS]

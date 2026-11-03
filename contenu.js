@@ -24,8 +24,8 @@ window.SITE = {
   "cta1": "Voir les applications",
   "cta2": "Demander une démo",
   "domainesSurtitre": "Domaines",
-  "domainesTitre": "Quatre univers, *un même niveau d'exigence*",
-  "domainesTexte": "Formation, accompagnement, commerce et loisirs : chaque application répond à un besoin métier précis, du cahier des charges à la mise en ligne.",
+  "domainesTitre": "Cinq univers, *un même niveau d'exigence*",
+  "domainesTexte": "Formation, gestion, commerce, vie associative et vidéo IA : chaque création répond à un besoin précis, du cahier des charges à la mise en ligne.",
   "uneSurtitre": "À découvrir",
   "uneTitre": "Applications *à la une*",
   "carrouselSurtitre": "En ligne",
@@ -52,6 +52,11 @@ window.SITE = {
    "l": "Clubs & associations",
    "d": "Tournois, clubs et vie associative.",
    "c": "vio"
+  },
+  "video": {
+   "l": "Vidéo IA",
+   "d": "Clips et films promotionnels générés par IA.",
+   "c": "ver"
   }
  },
  "portfolio": {
@@ -505,6 +510,32 @@ window.SITE = {
    "url": "https://mathapp-5xlgrbpq.manus.space/",
    "visible": true,
    "capture": ""
+  },
+  {
+   "id": "ryla-teaser",
+   "nom": "RYLA Martinique — teaser",
+   "code": "",
+   "categorie": "video",
+   "maquette": "tableau",
+   "resume": "Teaser vertical annonçant le RYLA Martinique, pour les réseaux sociaux.",
+   "contexte": "Clip promotionnel de 29 secondes généré par IA pour annoncer le RYLA Martinique, programme de leadership destiné aux jeunes : compte à rebours, images d'ambiance et appel à suivre le compte du programme.",
+   "fonctions": [
+    "Format vertical 9:16, prêt pour Instagram, TikTok et WhatsApp",
+    "Compte à rebours et titrage animé",
+    "Visuels générés par IA",
+    "Durée de 29 secondes"
+   ],
+   "stack": [
+    "Vidéo IA",
+    "Montage",
+    "Format 9:16"
+   ],
+   "territoires": "Martinique",
+   "statut": "Vidéo",
+   "url": "",
+   "visible": true,
+   "capture": "affiche-ryla-martinique.webp",
+   "video": "video-ryla-martinique.mp4"
   }
  ]
 };

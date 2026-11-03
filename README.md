@@ -1,43 +1,27 @@
-# BeautyMe
+# Portfolio Humanum Business Group
 
-Réservation beauté pour la Martinique, la Guadeloupe et la Guyane : coiffure, tresses et locks,
-barbier, ongles, esthétique, massage, en salon ou à domicile. Nom de code du module : **BeautyMe**.
-
-Prototype de démonstration : établissements fictifs, rendez-vous enregistrés dans le navigateur,
-code de validation `2026`, aucun message ni paiement réel.
-
-## Mise en ligne sur GitHub Pages
-
-1. Créer un dépôt, puis **Add file → Upload files**.
-2. Dans le Finder, ouvrir ce dossier, afficher les fichiers cachés avec **Cmd + Maj + .**,
-   sélectionner tout avec **Cmd + A** et glisser dans GitHub. `.nojekyll` doit faire partie de l'envoi.
-3. **Settings → Pages → Source : Deploy from a branch → `main` / `(root)`**.
-
-Le site est `index.html` : CSS et données intégrés, photos `beautyme-1.webp` à `beautyme-8.webp` à côté.
-
-## Fichiers
+Portfolio interactif des applications de Jean-Manuel DUNON, charte inspirée du site LAZR DECO.
 
 | Fichier | Rôle |
 |---|---|
-| `index.html` | Le site, généré par `build.py`. Ne pas modifier à la main |
-| `template.html`, `luxury.css` | Sources du site (pages, moteur JavaScript, charte) |
-| `data.json` | Référentiel exporté depuis `seed.py` |
-| `build.py` | Régénère `index.html` et `.nojekyll` |
-| `engine.py` | Moteur de créneaux : temps de pose, domicile, fuseaux UTC−4 / UTC−3 |
-| `seed.py` | Les 12 établissements de démonstration |
-| `store.py`, `main.py` | API FastAPI (non utilisée par le site statique) |
-| `schema.sql` | Schéma PostgreSQL, contrainte anti double réservation |
-| `test_engine.py`, `test_web.js`, `parity.json` | Tests Python et navigateur |
-| `audit_contrast.py` | Contrôle des contrastes |
+| `index.html` | Le portfolio (accueil, applications filtrables, fiches, démarche, contact) |
+| `admin.html` | Espace ADMIN (nom de code ADMIN-PHBG) : connexion, tableau de bord, applications, textes, apparence, publication, historique, réglages |
+| `contenu.js` | Tout le contenu du site, géré par l'admin |
+| `audit-contraste.py` | Audit bloquant des contrastes (`python3 audit-contraste.py`) |
+| `.nojekyll` | Fichier vide imposé par GitHub Pages |
 
-## Commandes
+## Mise en ligne (une seule fois)
+1. Créer un dépôt GitHub, ouvrir ce dossier, **Cmd + Maj + .** pour afficher `.nojekyll`, puis **Cmd + A** et glisser dans Add file → Upload files.
+2. Settings → Pages → Source : Deploy from a branch → `main` / `(root)`.
 
-```bash
-python3 build.py                      # régénère le site (ou double-clic sur Regenerer-le-site.command)
-python3 -m pytest -q test_engine.py   # 12 tests du moteur et de l'API
-npm i && node test_web.js             # 41 vérifications navigateur
-pip install -r requirements-dev.txt && uvicorn main:app --reload   # API sur http://127.0.0.1:8000/docs
-```
+## Espace ADMIN
+- Adresse : `https://<compte>.github.io/<depot>/admin.html` — identifiants modifiables dans Réglages (ne jamais les écrire dans un fichier du dépôt).
+- Publication en un clic : Réglages → dépôt `compte/depot` + jeton GitHub (Fine-grained token, ce seul dépôt, « Contents : Read and write »). Le jeton reste sur l'appareil, il n'est jamais publié.
+- Sans jeton : Publication → « Télécharger contenu.js », puis déposer le fichier sur GitHub.
+- Les captures et la photo sont converties en WebP et publiées à côté de `index.html`.
 
-Charte : camel `#C49A73`, camel clair `#E3CBB3`, noir, rose `#F2D9DF`, anis `#D5E890` ;
-titres Instrument Serif, texte Manrope. Logo « Beauty*Me* » conservé dans ses couleurs d'origine.
+## Sécurité
+Le mot de passe protège l'interface ; la vraie barrière est le jeton GitHub, seul capable de modifier le site. Sans lui, un visiteur qui forcerait l'admin ne peut rien publier.
+
+## Formulaire de contact
+Créer un formulaire sur formspree.io et coller son identifiant dans Réglages, puis publier.
