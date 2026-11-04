@@ -172,10 +172,10 @@ window.SITE = {
    "resume": "Réservation en ligne de prestations beauté, en institut ou à domicile.",
    "contexte": "Plateforme de prise de rendez-vous couvrant toute la beauté, pensée pour les spécificités des trois territoires ultramarins.",
    "fonctions": [
-    "Recherche de professionnels par territoire et prestation",
-    "Réservation en temps réel, en salon ou à domicile",
-    "Agenda et fiche client pour les professionnels",
-    "Rappels et gestion des annulations"
+    "Recherche par territoire, commune et prestation",
+    "Réservation 24 h/24, en salon ou à domicile",
+    "Confirmation immédiate et rappel sur WhatsApp",
+    "Agenda et espace pro pour les professionnels"
    ],
    "stack": [
     "Application web",
@@ -183,10 +183,10 @@ window.SITE = {
     "Paiement en ligne"
    ],
    "territoires": "Martinique, Guadeloupe, Guyane",
-   "statut": "En développement",
-   "url": "",
+   "statut": "En ligne",
+   "url": "https://atoutdunon-ship-it.github.io/beautyme/#accueil",
    "visible": true,
-   "capture": ""
+   "capture": "capture-beautyme.webp"
   },
   {
    "id": "taxi-forma",
@@ -265,17 +265,17 @@ window.SITE = {
   },
   {
    "id": "bilan",
-   "nom": "Bilan",
+   "nom": "Solo Diag",
    "code": "Bilan",
    "categorie": "accompagnement",
    "maquette": "tableau",
-   "resume": "Diagnostic et restitution de bilans professionnels.",
-   "contexte": "Plateforme destinée à un organisme d'accompagnement à la création et à la dynamisation d'activité.",
+   "resume": "Bilans professionnels : diagnostic, analyse IA et plan d'action.",
+   "contexte": "Plateforme privée de bilans professionnels pour les porteurs de projet accompagnés : diagnostic personnel et professionnel, analyse IA enrichie par le formateur, bilan concret et plan d'action. Accès sur autorisation de l'administrateur.",
    "fonctions": [
-    "Parcours bénéficiaire et formateur",
-    "Analyse assistée par IA, avec repli hors ligne",
-    "Consentement et conformité RGPD",
-    "Indicateurs de pilotage et export PDF"
+    "Diagnostic personnel et professionnel",
+    "Analyse IA enrichie par le formateur",
+    "Bilan concret et plan d'action",
+    "Espace privé, accès délivrés par l'administrateur"
    ],
    "stack": [
     "TypeScript",
@@ -283,8 +283,8 @@ window.SITE = {
     "API IA"
    ],
    "territoires": "Organismes d'accompagnement",
-   "statut": "Livré",
-   "url": "",
+   "statut": "En ligne",
+   "url": "https://bilanapp-9jfcrarq.manus.space/",
    "visible": true,
    "capture": ""
   },
